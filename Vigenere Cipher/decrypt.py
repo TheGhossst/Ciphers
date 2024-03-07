@@ -11,6 +11,7 @@ def generateKey(key,ptLen):
     return key
 
 def decrypt(cipherText, key):
+    key = generateKey(key,len(cipherText))
     cipherTextNumbers = []
     keyNumbers = []
     plainTextNumbers = []
@@ -30,19 +31,14 @@ def decrypt(cipherText, key):
 
     return ''.join(plainText)
 
-
-    
-
 def main():
     fileName = input("Enter the name of the file (without extentions) :")
     key = input("Enter the key value : ")
     
     with open(fileName + "-enc.txt", 'r') as file:
         lines = file.readlines()
-        cipherText = ''.join(lines)
-        
-    ctLen = len(cipherText)    
-    key = generateKey(key,ctLen)
+        cipherText = ''.join(lines)   
+   
     plainText = decrypt(cipherText,key)
 
     with open(fileName + "-dec.txt", 'w') as file:

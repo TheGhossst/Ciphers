@@ -8,10 +8,12 @@ def generateKey(key,ptLen):
     
     for i in range(ptLen - keyLen):
         modifiedKey.append(modifiedKey[i % keyLen])
+        
     key = "".join(modifiedKey)
     return key
 
 def encrypt(plainText, key):
+    key = generateKey(key,len(plainText))
     plainTextNumbers = []
     keyNumbers = []
     cipherTextNumbers = []
@@ -40,10 +42,7 @@ def main():
     with open(fileName + ".txt", 'r') as file:
         lines = file.readlines()
         plainText = ''.join(lines)
-        
-    ptLen = len(plainText)    
-    key = generateKey(key,ptLen)
-    print(key)
+    
     cipherText = encrypt(plainText,key)
 
     with open(fileName + "-enc.txt", 'w') as file:
