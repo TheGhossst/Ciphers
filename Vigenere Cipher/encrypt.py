@@ -43,6 +43,7 @@ def main():
         
     ptLen = len(plainText)    
     key = generateKey(key,ptLen)
+    print(key)
     cipherText = encrypt(plainText,key)
 
     with open(fileName + "-enc.txt", 'w') as file:

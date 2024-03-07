@@ -10,7 +10,7 @@ def generateKey(key,ptLen):
     key = "".join(modifiedKey)
     return key
 
-def decrypt(cipherText,key):
+def decrypt(cipherText, key):
     cipherTextNumbers = []
     keyNumbers = []
     plainTextNumbers = []
@@ -29,6 +29,7 @@ def decrypt(cipherText,key):
         plainText.append(chr(num + ord('A')))
 
     return ''.join(plainText)
+
 
     
 
