@@ -10,3 +10,5 @@ The cipherText(C) and key(K) are subtracted modulo 26.
 ```bash
 Di = (Ci - Ki) mod 26
 ```
+# ScreeenShots
+
