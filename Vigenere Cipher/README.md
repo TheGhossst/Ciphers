@@ -1,4 +1,8 @@
 # Vigenere Cipher
+Gui using tkinter
+```bash
+pip install tkinter
+```
 # Encryption
 The plainText(P) and key(K) are added modulo 26.
 ```bash
