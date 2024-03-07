@@ -8,5 +8,5 @@ Ei = (Pi + Ki) mod 26
 # Decryption
 The cipherText(C) and key(K) are subtracted modulo 26.
 ```bash
-Di = (Ei - Ki) mod 26
+Di = (Ci - Ki) mod 26
 ```
