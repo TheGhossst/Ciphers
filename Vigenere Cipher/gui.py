@@ -29,8 +29,8 @@ plainText.pack(side = "top",  anchor ="w")
 plainTextTextBox = Entry(window, font=("Arial", 14))
 plainTextTextBox.pack(side="top", padx=10, pady=10, fill="x")
 
-key =  Label(window,text="Enter Key (a-z): ",font = ("Arial",16))
-key.pack(side = "top",anchor="w")
+keyLabel =  Label(window,text="Enter Key (a-z): ",font = ("Arial",16))
+keyLabel.pack(side = "top",anchor="w")
 
 keyTextBox = Entry(window, font=("Arial", 14))
 keyTextBox.pack(side="top", padx=10, pady=10, fill="x")

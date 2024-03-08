@@ -14,7 +14,6 @@ def generateKey(key,ptLen):
 
 def encrypt(plainText, key):
     plainText = plainText.replace(' ', '')
-    print(plainText)
     key = generateKey(key,len(plainText))
     plainTextNumbers = []
     keyNumbers = []
