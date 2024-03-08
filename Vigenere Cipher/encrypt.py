@@ -13,6 +13,8 @@ def generateKey(key,ptLen):
     return key
 
 def encrypt(plainText, key):
+    plainText = plainText.replace(' ', '')
+    print(plainText)
     key = generateKey(key,len(plainText))
     plainTextNumbers = []
     keyNumbers = []
