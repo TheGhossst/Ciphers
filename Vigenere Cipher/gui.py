@@ -41,10 +41,10 @@ cipherText.pack(side = "top",anchor = "w")
 cipherTextTextBox = Entry(window, font=("Arial", 14))
 cipherTextTextBox.pack(side="top", padx=10, pady=10, fill="x")
 
-encryptButton = Button(window, text="Encrypt", command=encryptThis)
+encryptButton = Button(window, text="Encrypt",font = ("Arial",16), command=encryptThis)
 encryptButton.pack(side="top", pady=10)
 
-decryptButton = Button(window, text="Decrypt", command=decryptThis)
+decryptButton = Button(window, text="Decrypt",font = ("Arial",16), command=decryptThis)
 decryptButton.pack(side="top", pady=10)
 
 window.mainloop()
