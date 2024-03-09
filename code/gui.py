@@ -5,14 +5,14 @@ from decrypt import decrypt
 def encryptThis():
     plain_text = plainTextTextBox.get()
     key = keyTextBox.get()
-    cipher_text = encrypt(plain_text, key)
+    cipher_text = encrypt(plain_text.upper(), key.upper())
     cipherTextTextBox.delete(0, END)  
     cipherTextTextBox.insert(0, cipher_text)
     
 def decryptThis():
     cipher_text = cipherTextTextBox.get()
     key = keyTextBox.get()
-    plain_text = decrypt(cipher_text, key)
+    plain_text = decrypt(cipher_text.upper(), key.upper())
     plainTextTextBox.delete(0, END)  
     plainTextTextBox.insert(0, plain_text)
 
